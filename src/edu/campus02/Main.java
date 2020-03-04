@@ -36,20 +36,18 @@ public class Main {
         teil2 = 2==4;
         teil1 = 1>3 && !(3-1 < 5);
 
-        // Bsp 4
+        ergebnis3 = (1>3 && !(3-1<5))|| 2 == 4;
+        System.out.println(ergebnis3);
 
+        // Bsp 4 (6 >= 2*3 || 2-3 < 0) && ( 1*1 == 1 && 1 != 1+1)
+
+        teil1 = 6 >= 2*3 || 2-3 < 0;
+        teil2 = 1*1 == 1 && 1 != 1+1;
         boolean ergebnis4;
 
-        ergebnis4 = (6 >= 2*3 || 2-3 < 0) && ( 1 * 1 == 1 && 1 != 1+1);
+        ergebnis4 = teil1 && teil2;
 
         System.out.println(ergebnis4);
 
-
-
-
-
-
-        ergebnis3 = (1>3 && !(3-1<5))|| 2 == 4;
-        System.out.println(ergebnis3);
     }
 }
